@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha384-wvfXpqpZZVQGKt9GNlZp1qc73gIlOjNlZgOrzoABd7MTFF4aHvq1p1KtWPhI2RA3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link href="css/stylesheet.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand" href="#"><img src="img/logo.png" class="img-fluid img-logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/doctors.html">DOCTORS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/services.html">SERVICES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html">CONTACT</a>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-info" onclick="location.href='login.html';">LOGIN</button>
+            </li>
+    
+          </ul>
+        </div>
+      </nav>
+
+    <section id="frontpage-about">
+        <container class="frontpage-container container text-center">
+            <p class="about-title">ABOUT PAGE</p>
+            <h3 class="about-call-to-action"> The hospital that cares about humanity </h3>
+            <div class="col d-flex justify-content-center">
+                <img src="img/hospital.jpg" alt="Hospital building" class="about-img">
+            </div>
+
+        </container>
+
+    </section>
+
+    <section class="welcome-index">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-md-6">
+                    <p class="appointment-title mt-5">OUR STORY</p>
+                    <h3 class="appointment-call-to-action">Dedicated to provide the best treatment </h3>
+                    <h6 class="appointment-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Necessitatibus repellat totam delectus possimus facilis aspernatur fuga modi quos sequi maiores
+                        consequatur recusandae commodi voluptatem accusamus tempora eum, consequuntur voluptas? Maiores
+                        a minus dolore inventore iste?</h6>
+
+                    <button class="btn btn-info" onclick="location.href='services.html';">See all services</button>
+                </div>
+
+                <div class="col-md-6 left-side-box-index">
+                    <img src="img/medic.png" alt="Medic" class="img-fluid img-medic" width="400px">
+
+                </div>
+            </div>
+    </section>
+
+    <section id="about-carousel">
+        <div class="container container-carousel">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-6 align-items-center d-flex">
+                                <div class="col">
+                                    <img class="testimonial-quote" src="https://uploads-ssl.webflow.com/6426aa53f075ab6c61341787/6426aa53f075ab590b3417b7_Testimonial%20Quote.svg" loading="lazy" alt="testimonial quote">
+                                    <h5 class="quote">“A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy."</h5>
+                                    <p class="quote-autor">Mrs. Williams</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <img class="d-block w-100 carousel-img" src="img/profile1.jpg" alt="First slide">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item"> 
+                        <div class="row">
+                            <div class="col-md-6 align-items-center d-flex">         
+                                <div class="col">
+                                    <img class="testimonial-quote" src="https://uploads-ssl.webflow.com/6426aa53f075ab6c61341787/6426aa53f075ab590b3417b7_Testimonial%20Quote.svg" loading="lazy" alt="testimonial quote">
+                                    <h5 class="quote">“A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy."</h5>
+                                    <p class="quote-autor">Mrs. Browns</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <img class="d-block w-100 carousel-img" src="img/profile2.jpg" alt="First slide">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-6  align-items-center d-flex">
+                                <div class="col">
+                                    <img class="testimonial-quote" src="https://uploads-ssl.webflow.com/6426aa53f075ab6c61341787/6426aa53f075ab590b3417b7_Testimonial%20Quote.svg" loading="lazy" alt="testimonial quote">
+                                    <h5 class="quote">“A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy."</h5>
+                                    <p class="quote-autor">Mrs. Lammars</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <img class="d-block w-100 carousel-img" src="img/profile3.jpg" alt="First slide">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-6  align-items-center d-flex">
+                                <div class="col">
+                                    <img class="testimonial-quote" src="https://uploads-ssl.webflow.com/6426aa53f075ab6c61341787/6426aa53f075ab590b3417b7_Testimonial%20Quote.svg" loading="lazy" alt="testimonial quote">
+                                    <h5 class="quote">“A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy."</h5>
+                                    <p class="quote-autor">Mrs. Wests</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <img class="d-block w-100 carousel-img" src="img/profile4.jpg" alt="First slide">
+                                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="appointment">
+        <div class="container">
+          <div class="row d-flex align-items-center">
+            <div class="col-md-6">
+              <p class="appointment-title">APPOINTMENT</p>
+              <h3 class="appointment-call-to-action"> Get in touch to book your first appointment </h3>
+              <h6 class="appointment-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, delectus!</h6>
+    
+              <a href="" class="appointment-call"><i class="bi bi-telephone mr-2"></i>(35) 99999-9999</a>
+              <br>
+              <a href="" class="appointment-call"><i class="bi bi-envelope-at-fill mr-2"></i></i>heartsunited@example.com</a>
+            </div>
+            <div class="col-md-6">
+              <form action="seu-script-de-processamento.php" class="form-appointment" method="post">
+                <input type="text" class="appointment-field" id="name-appointment" name="name-appointment" placeholder="Name" required>
+                <input type="email" class="appointment-field" id="email-appointment" name="email-appointment" placeholder="Email" required>
+                <select class="appointment-field" placeholder="Choose one" name="consults-type" id="consults-type">
+                  <option value="" disabled selected hidden>Select a plan</option>
+                  <option value="option_1">Option 1</option>
+                  <option value="option_2">Option 2</option>
+                  <option value="option_3">Option 3</option>
+                  <option value="option_4">Option 4</option>
+                </select>
+                <textarea class="appointment-field-message" id="message-appointment" name="message-appointment" rows="5" placeholder="Message" required> </textarea>
+            
+                <button class="btn btn-info" type="submit">Send message</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <footer class="footer-index">
+        <div class="container">
+            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 footer-content">
+                <div class="col mb-3">
+                    <a href="" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+                        <a href="#"><img src="img/logo.png" class="img-fluid footer-logo"></a>
+                    </a>
+                    <p class="text-footer-secondary">© 2023</p>
+                </div>
+                <div class="col mb-3"></div>
+                <div class="col mb-3"></div>
+                <div class="col mb-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2 footer-topics">
+                            <a href="index.html" class="nav-link p-0 text-body-secondary">Home</a>
+                        </li>
+                        <li class="nav-item mb-2 footer-topics">
+                            <a href="about.html" class="nav-link p-0 text-body-secondary">About</a>
+                        </li>
+                        <li class="nav-item mb-2 footer-topics">
+                            <a href="doctors.html" class="nav-link p-0 text-body-secondary">Doctors</a>
+                        </li>
+                        <li class="nav-item mb-2 footer-topics">
+                            <a href="contact.html" class="nav-link p-0 text-body-secondary">Contact us</a>
+                        </li>
+                        <li class="nav-item mb-2 footer-topics">
+                            <a href="services.html" class="nav-link p-0 text-body-secondary">Services</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col mb-3"></div>
+
+            </footer>
+
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+</body>
+
+</html>

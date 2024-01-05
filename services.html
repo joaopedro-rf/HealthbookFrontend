@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6oHSvzUZtNJSDB2">
+    <link href="css/stylesheet.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand" href="#"><img src="img/logo.png" class="img-fluid img-logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about.html">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/doctors.html">DOCTORS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/services.html">SERVICES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact.html">CONTACT</a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-info" onclick="location.href='login.html';">LOGIN</button>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <section id="frontpage-services">
+        <div class="container container-services text-center">
+            <p class="services-header">OUR SERVICES</p>
+            <h1 class="services-description">HeartsLink is dedicated to <br>provide the best treatment</h1>
+            <div class="button-container">
+
+                <button class="services-btn btn btn-info active" onclick="changeTab(1)">Clinic</button>
+                <button class="services-btn btn btn-info" onclick="changeTab(2)">Exams</button>
+                <button class="services-btn btn btn-info" onclick="changeTab(3)">Birth</button>
+                <button class="services-btn btn btn-info" onclick="changeTab(4)">Prenatal</button>
+            </div>
+
+            <div class="tab-content" id="tabContent">
+                <div id="tab1Content" class="tab-pane fade show active">
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="service-box">
+                                <img src="img/img1service.jpg" class="services-img">
+                                <h3 class="service-box-title">Routine Gynecological Exams</h3>
+                                <p class="service-box-description">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, eius?</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <div class="service-box">
+                                <img src="img/img2service.jpg" class="services-img">
+                                <h3 class="service-box-title">Contraceptive Counseling</h3>
+                                <p class="service-box-description">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, voluptatum.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="service-box">
+                                <img src="img/img3service.jpg" class="services-img">
+                                <h3 class="service-box-title">Pregnancy Care</h3>
+                                <p class="service-box-description">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, modi.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="service-box">
+                                <img src="img/img4service.jpg" class="services-img">
+                                <h3 class="service-box-title">Treatment of Gynecological Conditions</h3>
+                                <p class="service-box-description">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, adipisci.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <div class="service-box">
+                                <img src="img/img1service.jpg" class="services-img">
+                                <h3 class="service-box-title">Menopausal Care</h3>
+                                <p class="service-box-description">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, sed.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="service-box">
+                                <img src="img/img2service.jpg" class="services-img">
+                                <h3 class="service-box-title">Menstrual Health Management</h3>
+                                <p class="service-box-description">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, tempora.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab2Content" class="tab-pane">
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="service-box">
+                                <img src="img/img4service.jpg" class="services-img">
+                                <h3 class="service-box-title">Menopausal Care</h3>
+                                <p class="service-box-description">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, quos?</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <div class="service-box">
+                                <img src="img/img3service.jpg" class="services-img">
+                                <h3 class="service-box-title">Menstrual Health Management</h3>
+                                <p class="service-box-description">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, recusandae?</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="service-box">
+                                <img src="img/img2service.jpg" class="services-img">
+                                <h3 class="service-box-title">Contraceptive Counseling</h3>
+                                <p class="service-box-description">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, iure.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="service-box">
+                                <img src="img/img1service.jpg" class="services-img">
+                                <h3 class="service-box-title">Treatment of Gynecological Conditions</h3>
+                                <p class="service-box-description">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, placeat.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <div class="service-box">
+                                <img src="img/img4service.jpg" class="services-img">
+                                <h3 class="service-box-title">Menstrual Health Management</h3>
+                                <p class="service-box-description">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, mollitia!</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="service-box">
+                                <img src="img/img1service.jpg" class="services-img">
+                                <h3 class="service-box-title">Routine Gynecological Exams</h3>
+                                <p class="service-box-description">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, voluptas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab3Content" class="tab-pane">
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="service-box">
+                                <img src="img/img2service.jpg" class="services-img">
+                                <h3 class="service-box-title">Pregnancy Care</h3>
+                                <p class="service-box-description">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, cum.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <div class="service-box">
+                                <img src="img/img3service.jpg" class="services-img">
+                                <h3 class="service-box-title">Menstrual Health Management</h3>
+                                <p class="service-box-description">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, ipsum!</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="service-box">
+                                <img src="img/img4service.jpg" class="services-img">
+                                <h3 class="service-box-title">Treatment of Gynecological Conditions</h3>
+                                <p class="service-box-description">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, ut!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="service-box">
+                                <img src="img/img1service.jpg" class="services-img">
+                                <h3 class="service-box-title">Menopausal Care</h3>
+                                <p class="service-box-description">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, reiciendis.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <div class="service-box">
+                                <img src="img/img2service.jpg" class="services-img">
+                                <h3 class="service-box-title">Routine Gynecological Exams</h3>
+                                <p class="service-box-description">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, hic?</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="service-box">
+                                <img src="img/img3service.jpg" class="services-img">
+                                <h3 class="service-box-title">Contraceptive Counseling</h3>
+                                <p class="service-box-description">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, facilis?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab4Content" class="tab-pane">
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="service-box">
+                                <img src="img/img3service.jpg" class="services-img">
+                                <h3 class="service-box-title">Treatment of Gynecological Conditions</h3>
+                                <p class="service-box-description">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, suscipit.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <div class="service-box">
+                                <img src="img/img1service.jpg" class="services-img">
+                                <h3 class="service-box-title">Menopausal Care</h3>
+                                <p class="service-box-description">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, eaque.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="service-box">
+                                <img src="img/img2service.jpg" class="services-img">
+                                <h3 class="service-box-title">Menstrual Health Management</h3>
+                                <p class="service-box-description">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum, eos!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="service-box">
+                                <img src="img/img4service.jpg" class="services-img">
+                                <h3 class="service-box-title">Pregnancy Care</h3>
+                                <p class="service-box-description">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, quis.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <div class="service-box">
+                                <img src="img/img3service.jpg" class="services-img">
+                                <h3 class="service-box-title">Routine Gynecological Exams</h3>
+                                <p class="service-box-description">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, fuga.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="service-box">
+                                <img src="img/img1service.jpg" class="services-img">
+                                <h3 class="service-box-title">Contraceptive Counseling</h3>
+                                <p class="service-box-description">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, atque?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-index">
+        <div class="container">
+            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 footer-content">
+                <div class="col mb-3">
+                    <a href="" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+                        <a href="#"><img src="img/logo.png" class="img-fluid footer-logo"></a>
+                    </a>
+                    <p class="text-footer-secondary">© 2023</p>
+                </div>
+                <div class="col mb-3"></div>
+                <div class="col mb-3"></div>
+                <div class="col mb-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2 footer-topics">
+                            <a href="index.html" class="nav-link p-0 text-body-secondary">Home</a>
+                        </li>
+                        <li class="nav-item mb-2 footer-topics">
+                            <a href="about.html" class="nav-link p-0 text-body-secondary">About</a>
+                        </li>
+                        <li class="nav-item mb-2 footer-topics">
+                            <a href="doctors.html" class="nav-link p-0 text-body-secondary">Doctors</a>
+                        </li>
+                        <li class="nav-item mb-2 footer-topics">
+                            <a href="contact.html" class="nav-link p-0 text-body-secondary">Contact us</a>
+                        </li>
+                        <li class="nav-item mb-2 footer-topics">
+                            <a href="services.html" class="nav-link p-0 text-body-secondary">Services</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col mb-3"></div>
+
+            </footer>
+
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src="js/servicesScript.js"></script>
+</body>
+
+</html>

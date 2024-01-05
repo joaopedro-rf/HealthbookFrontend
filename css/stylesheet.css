@@ -1,0 +1,656 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+
+}
+
+/*--------------------------- loggedpage section ------------------------------*/
+
+
+/*--------------------------- welcome section ------------------------------*/
+
+.welcome-index {
+    background-color: #d2fdfa;
+    margin: 0;
+    height: auto;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.navbar {
+    background-color: white;
+    border-bottom: 2px solid black;
+}
+
+.navbar-nav li {
+    padding: 0 1rem;
+}
+
+
+.navbar-nav li a {
+    color: black !important;
+    font-weight: 600;
+}
+
+.navbar-nav li a:hover {
+    color: grey !important;
+}
+
+.img-logo {
+    height: 70px;
+}
+
+
+.welcome-text {
+    font-weight: 600;
+    margin-top: 100px;
+    color: #117a8b;
+    align-items: center;
+
+}
+
+.slogan-text {
+    font-weight: 600;
+    margin-bottom: 100px;
+    color: black;
+    align-items: center;
+    padding-bottom: 100px;
+    border-bottom: 3px solid black;
+    
+}
+
+a.appointment-telephone {
+    color: black;
+    text-decoration: none;
+    margin: 20px;
+}
+
+a.appointment-telephone:hover {
+    color: grey;
+    text-decoration: none;
+    margin: 20px;
+}
+
+.left-side-box-index{
+    overflow: visible;
+}
+
+.img-medic {
+    max-width: 100%;
+    height: auto;
+    margin-top: 5rem;
+    z-index: 2;
+    position: relative;
+}
+
+.animated-box{
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    font-weight: 700;
+    background-color: black;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    color: white;
+    border-radius: 1rem;
+    z-index: 2;
+    animation: floatAnimation 2s infinite alternate ease-in;
+}
+
+@keyframes floatAnimation {
+    from {
+        transform: translateY(0); /* Inicialmente, sem deslocamento vertical */
+    }
+    to {
+        transform: translateY(-20px); /* Deslocamento vertical para cima */
+    }
+}
+
+@media only screen and (max-width: 767px) {  
+    .animated-box{
+        position: absolute;
+        top: 20%;
+        right: 60%;
+    }
+}
+
+.circle-clip {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 100%;
+    height: 100%;
+    background-color: #004756; 
+    clip-path: circle(40%);
+    z-index: 1;
+    transition: 300ms ease-in;
+    opacity: 0.2;
+}
+
+.col-md-6:hover .circle-clip {
+    transform: translate3d(10px, 10px, -10px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg); 
+    transform-style: preserve-3d;
+
+}
+
+
+/*--------------------------- services section ------------------------------*/
+
+#services {
+    margin: 0;
+    background-color: #00a0aa;
+    font-weight: 500;
+    color: white;
+    height: auto;
+    padding-bottom: 5rem;
+    
+    
+}
+
+.img-services {
+    max-width: 100%;
+    height: auto;
+}
+
+.list-services {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.title {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin: 0;
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+
+.services-title {
+    font-weight: 700;
+    font-size: 2rem;
+
+}
+
+.services-description {
+    line-height: 2rem;
+}
+
+
+#services .btn-light {
+    padding: 0.5rem 2rem;
+    font-weight: 700;
+    width: 15rem;
+    height: 3.5rem;
+    margin-top: 1rem;
+}
+
+
+/*--------------------------- about us section ------------------------------*/
+
+#about-us {
+    background-color: #004756;
+    color: white;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    font-weight: 600;
+    margin: 0;
+    height: auto;
+}
+
+
+#about-us .reasons-list {
+    list-style-type: none;
+    color: black;
+    font-size: 1rem;
+    line-height: 2.25rem;
+}
+
+.bi-check-circle-fill {
+    color: grey;
+    margin-right: 1rem;
+
+}
+
+.box-area-index {
+    border-radius: 1rem;
+}
+
+.bullet-point {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    color: black;
+}
+
+.left-box-about-us {
+    flex-direction: column;
+    grid-row-gap: 1.25rem;
+    display: flex;
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+    margin-top: 5rem;
+}
+
+.btn-about-us {
+    width: 15rem;
+    height: 3.5rem;
+    margin-top: 1rem;
+}
+
+/*--------------------------- appointment section ------------------------------*/
+
+#appointment {
+    height: auto;
+    background-color: #d2fdfa;
+    margin: 0;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.appointment-call-to-action {
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+.appointment-description {
+    font-weight: 500;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    line-height: 2.25rem;
+}
+
+.appointment-call {
+    color: black;
+    font-weight: 700;
+    text-decoration: underline;
+    line-height: 2.75rem;
+}
+
+.appointment-call:hover {
+    color: grey;
+}
+
+.form-appointment {
+    border-radius: 5%;
+    background-color: white;
+    display: grid;
+    gap: 1.25rem;
+    padding: 2rem;
+    margin-top: 1rem;
+}
+
+.appointment-title {
+    color: #00a0aa;
+    font-weight: 700;
+
+}
+
+.appointment-call .bi-telephone {
+    background-color: #00a0aa;
+    padding: 0.5rem;
+    border-radius: 50%;
+    gap: 0.25rem;
+}
+
+.appointment-call .bi-envelope-at-fill {
+    background-color: #00a0aa;
+    padding: 0.5rem;
+    border-radius: 50%;
+
+}
+
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+}
+
+select {
+    background-color: white;
+}
+
+/*--------------------------- footer section ------------------------------*/
+
+.footer-index {
+    background-color: #004756;
+    margin: 0;
+    color: white;
+    padding-top: 5rem;
+}
+
+.footer-content {
+    border-top: solid 1px grey;
+    padding-top: 2rem;
+}
+
+.footer-logo {
+    width: 5rem;
+}
+
+.text-body-secondary {
+    color: white;
+    transition: all 400ms ease;
+}
+
+.text-body-secondary:hover {
+    color: lightgrey;
+    transform: translate(0.75rem, 0rem);
+}
+
+/*--------------------------- login section ------------------------------*/
+.featured-image {
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.container-login {
+    font-family: 'Manrope', sans-serif;
+    ;
+    padding: 0;
+    background-color: #d2fdfa;
+    color: black;
+    font-weight: 600;
+}
+
+.submit-form {
+    padding: 0;
+}
+
+.logo-img {
+    width: 100%;
+    height: 90%;
+}
+
+@media only screen and (max-width: 767px) {  
+    .logo-img {
+        display: none;
+    }
+}
+
+.form-check{
+    justify-content: center;
+}
+
+
+
+/*--------------------------- pacientRegister section ------------------------------*/
+.box-area-pacient {
+    background-color: #d2fdfa;
+    font-weight: 700;
+    color: black;
+}
+
+/*--------------------------- accountRegister section ------------------------------*/
+.box-area-login {
+    background-color: #d2fdfa;
+    font-weight: 700;
+    color: black;
+}
+
+/*--------------------------- services.html section ------------------------------*/
+#frontpage-services {
+    background-color: #d2fdfa;
+    margin: 0;
+    height: auto; 
+    font-weight: 700;   
+}
+
+.services-header{
+    padding-top: 5rem;
+    color: #117a8b;
+    font-weight: 700;
+
+}
+
+.services-description{
+    font-weight: 700;
+    line-height: 3rem;
+}
+
+.button-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    width: 22rem;
+    border-radius: 10px;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.services-btn {
+    background-color: transparent;
+    color:black;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.services-btn:hover {
+   color:white;
+   box-shadow: none;
+}
+
+.services-btn:focus {
+    background-color: #117a8b; 
+    color: #fff;
+    box-shadow: none;
+}
+
+.services-btn:active {
+    background-color: #117a8b; 
+    color: #fff;
+}
+
+.tab-content{
+    padding-top: 5rem;
+}
+
+.container-services{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.service-box{
+    background-color: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    height: 100%;
+}
+
+.services-img{
+    width: 300px;
+    padding-bottom: 2rem;
+}
+
+.service-box-title{
+    font-weight: 700;
+}
+
+.service-box-description{
+    font-weight: 500;
+}
+
+/*--------------------------- about section ------------------------------*/
+#frontpage-about{
+    background-color: #d9fffc;
+    padding-top: 5rem;
+}
+
+.about-img{
+    height: auto;
+    max-width: 60%;
+    border-radius: 30px;
+    align-items: center;
+}
+
+.about-title{
+    color: #117a8b ;
+    font-weight: 700;
+    padding-top: 5rem;
+}
+
+.about-call-to-action{
+    color: black;
+    font-weight: 700;
+    font-size: 4rem;
+    padding-bottom: 5rem;
+}
+
+#about-carousel{
+    background-color: #004756;
+    color: white;
+    
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg'  fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") ;
+    
+}
+   
+   .carousel-control-next-icon {
+     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-prev, .carousel-control-next {
+    margin-left: -6em;
+    margin-right: -6em;
+    
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-size: 50px 50px; 
+    width: 50px;
+    height: 50px; 
+}
+
+.testimonial-quote{
+    position: fixed;
+    top: 20%;
+    left: 0;
+
+}
+
+.quote-autor{
+    font-weight: 700;
+    padding-top: 2rem;
+}
+
+.quote{
+    font-weight: 600;
+    font-size: 2rem;
+    padding-top: 5rem;
+}
+
+.container-carousel{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.carousel-img{
+    height: 500px;
+}
+
+@media only screen and (max-width: 767px) {  
+    .about-img{
+        
+        height: auto;
+        max-width: 100%;
+        border-radius: 30px;
+        align-items: center;
+    }
+  
+    .testimonial-quote{
+        position: fixed;
+        top: 0%;
+        left: 0;
+    
+    }
+
+    .carousel-control-prev, .carousel-control-next {
+        margin-left: 0em;
+        margin-right: 0em;
+        
+    }
+
+    .carousel-img{
+        height: 300px;
+    }
+}
+
+/*--------------------------- contact section ------------------------------*/
+
+.container-appointment-contact{
+    padding-top: 5rem;
+}
+
+/*--------------------------- doctors section ------------------------------*/
+
+#doctors{
+    padding-top: 5rem;
+    background-color: #d2fdfa;
+    padding-bottom: 5rem;
+    font-weight: 500;
+}
+
+
+.doctors-imgs{
+    width: 300px;
+    border-radius: 10px;
+}
+
+.doctors-title{
+    padding-top: 5rem;
+    color: #00a0aa;
+    font-weight: 700;
+}
+
+.doctors-call-to-action{
+    padding-bottom: 5rem;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.second-doctor-row{
+    padding-top: 5rem;
+}
+
+.doctor-name{
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.years-experience{
+    background-color: rgba(0, 160, 170, 0.15);
+    border-radius: 5px;
+    padding: 4px;
+}

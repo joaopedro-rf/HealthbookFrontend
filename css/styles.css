@@ -1,0 +1,67 @@
+
+body {
+    
+    margin: 0;
+    padding: 0;
+   
+}
+
+.calendar {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    
+    
+}
+
+.month {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.2em;
+}
+
+.days {
+    display: flex;
+    background-color: #2980b9;
+    color: #fff;
+}
+
+.day {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+}
+
+.dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1px;
+}
+
+.date {
+    position: relative;
+    padding: 10px;
+    border: 1px solid #ccc;
+    min-height: 100px;
+}
+
+.number {
+    font-size: 1.2em;
+}
+
+.event {
+    font-size: 0.9em;
+    margin-top: 5px;
+    color: #555;
+}
+
+/* Example: Different background color for event dates */
+.date.event-date {
+    background-color: #2ecc71;
+    color: #fff;
+}
