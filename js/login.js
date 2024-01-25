@@ -14,12 +14,12 @@ async function userLogin() {
     };
 
     const url = 'https://test-healthbook-deploy.onrender.com/api/users/login';
-
+    console.log(userToLogin);
     try {
         const response = await fetch(url, {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
             },
             body: JSON.stringify(userToLogin),
         });

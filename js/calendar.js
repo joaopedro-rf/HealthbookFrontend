@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const viewModal = new bootstrap.Modal(document.getElementById("viewModal"));
   const msgDeleteEvent = document.getElementById("msgDeleteEvent");
   const storedToken = localStorage.getItem("token");
-  console.log(storedToken);
+ 
   var calendar = new FullCalendar.Calendar(calendarEl, {
     headerToolbar: {
       left: 'prev,next today',
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function () {
       document.getElementById("formEditEvent").style.display = "none";
       document.getElementById("editModalLabel").style.display = "none";
 
-      console.log(info.event);
+      
 
       document.getElementById("modalId").innerText = info.event.id;
       document.getElementById("modalTitle").innerText = info.event.title;
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function () {
         eventData[key] = value;
       });
 
-      console.log(eventData);
+      
       const api = "https://test-healthbook-deploy.onrender.com/api/calendar";
 
       try {
@@ -126,13 +126,13 @@ document.addEventListener('DOMContentLoaded', function () {
           },
           body: JSON.stringify(eventData),
         });
-        console.log(response);
+        
         if (response.ok) {
 
           msg.innerHTML = `<div class="alert alert-success" role="alert">
           ${"Successfuly created a new event!"}
           </div>`;
-          console.log('Succesfuly create an event');
+          
           formCreateEvent.reset();
           createModal.hide();
           removeMsg();
@@ -200,7 +200,7 @@ document.addEventListener('DOMContentLoaded', function () {
     btnEditEvent.value = "Saving ...";
     const formData = new FormData(formEditEvent);
     const id = document.getElementById("edit_id").value;
-
+    
     const url = `https://test-healthbook-deploy.onrender.com/api/calendar/${id}`;
     const updatedEvent = {
       id: id,
@@ -226,7 +226,7 @@ document.addEventListener('DOMContentLoaded', function () {
           ${"Successfuly updated event!"}
           </div>`;
 
-        console.log('Succesfuly updated the event');
+        
         formEditEvent.reset();
         viewModal.hide();
         removeMsg();
@@ -294,7 +294,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             const eventToRemove = calendar.getEventById(idEvent);
             if (eventToRemove) {
-              console.log("id do evento" + idEvent + "event to remove: " + eventToRemove);
+              
               eventToRemove.remove();
             }
           }

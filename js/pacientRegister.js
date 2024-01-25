@@ -18,7 +18,7 @@ async function registerPacient() {
     };
 
     const storedToken = localStorage.getItem("token");
-    console.log("Token recuperado em arquivo2.js:", storedToken);
+   
 
    
         try {
@@ -34,7 +34,7 @@ async function registerPacient() {
                 throw new Error(`Request error: ${response.statusText}`);
             }
             const responseData = await response.json();
-            console.log('Response' , response);
+          
             if(response.ok)
                 return window.location.href = '/calendar.html';
            
